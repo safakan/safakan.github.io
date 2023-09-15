@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Your Blog Title</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div id="container">
+        <!-- Title and Description -->
+        <header>
+            <h1>Your Blog Title</h1>
+            <p>Your blog description here</p>
+        </header>
+        
+        <!-- Categories -->
+        <section id="categories">
+            <div class="category-box">Category 1</div>
+            <div class="category-box">Category 2</div>
+            <div class="category-box">Category 3</div>
+            <div class="category-box">Category 4</div>
+        </section>
+
+        <!-- Blog Posts -->
+        <section id="blog-posts">
+            <!-- Placeholders for blog posts, will be populated dynamically -->
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+,Phase,Step,Description,Technology,Milestone
+0,Phase 0: Database Setup,0.1,Choose a database service,AWS RDS/PostgreSQL,Database chosen
+1,Phase 0: Database Setup,0.2,Initialize database,SQL/Django ORM,Database initialized
+2,Phase 0: Database Setup,0.3,Test database connection,Django ORM,Database connected
+3,Phase 1: Basic Setup,1.1,Initialize Django project,Django,Basic working web application
+4,Phase 1: Basic Setup,1.2,Setup basic views and URLs,Django,Basic working web application
+5,Phase 1: Basic Setup,1.3,Create basic HTML templates,HTML/CSS,Basic working web application
+6,Phase 2: Categories and Basic Blog Posts,2.1,Create Categories model,Django ORM,Manually create blog posts with categories
+7,Phase 2: Categories and Basic Blog Posts,2.2,Create BlogPost model,Django ORM,Manually create blog posts with categories
+8,Phase 2: Categories and Basic Blog Posts,2.3,Implement Django admin for content management,Django Admin,Manually create blog posts with categories
+9,Phase 3: Dynamic Filtering (Categories),3.1,Implement JavaScript logic for category-based filtering,JavaScript,Category-based filtering
+10,Phase 4: Markdown Support,4.1,Implement Markdown to HTML conversion,Python/Markdown,Markdown-based CMS
+11,Phase 5: Search and Labels,5.1,Add labels field in BlogPost model,Django ORM,Basic search functionality
+12,Phase 5: Search and Labels,5.2,Implement basic search functionality,JavaScript/Django,Basic search functionality
+13,Phase 6: Advanced Search (Topic Modeling),6.1,Research and pick a topic modeling algorithm,Python/NLP,Advanced search functionality
+14,Phase 6: Advanced Search (Topic Modeling),6.2,Train the topic model on your existing blog posts,Python/NLP,Advanced search functionality
+15,Phase 6: Advanced Search (Topic Modeling),6.3,Integrate the topic model into your search functionality,JavaScript/Django,Advanced search functionality
