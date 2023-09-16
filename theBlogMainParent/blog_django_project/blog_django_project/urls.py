@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 from theBlog.views import IndexView
-
+# from theBlog.views import blog_list
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', include('theBlog.urls')),    
+    path('', include('theBlog.urls')),  
+    path('markdownx/', include('markdownx.urls')),  
+    # path('blog/', blog_list, name='blog_list'),
 ]

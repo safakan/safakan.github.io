@@ -1,0 +1,12 @@
+{% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.created_at }}</p>
+    <img src="{{ post.image.url }}" alt="{{ post.title }}">
+    <div>
+        {{ post.content|markdownify }}
+    </div>
+{% endfor %}
+
+
+
+
