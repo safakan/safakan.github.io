@@ -5,8 +5,29 @@ body {
 }
 
 #container {
-    text-align: center;
+    max-width: 1200px;  /* Or whatever maximum width you desire */
     margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.column-of-posts {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.post-item {
+    margin: 20px;
+    text-align: center;
+    border: 2px solid white;  /* Adds a border around the box */
+    width: 300px;  /* Sets the width of the box */
+    height: auto; /* Allows the box to grow vertically based on content */
+
+}
+
+img {
+    width: 300px;  /* Adjust image width as needed */
 }
 
 header h1, header p {

@@ -6,9 +6,10 @@ from .models import BlogPost
 # Create your views here.
 class IndexView(View):
     def get(self, request):
-        return render(request, 'index.html')
 
+        ## show blog posts
+        posts = BlogPost.objects.all().order_by('-created_at')
 
-# def blog_list(request):
-#     posts = BlogPost.objects.filter(is_published=True).order_by('-created_at')
-#     return render(request, 'blog_list.html', {'posts': posts})    
+        # only main index.html
+        # return render(request, 'index.html')
+        return render(request, 'index.html', {'posts': posts})

@@ -12,6 +12,7 @@
         <header>
             <h1>Your Blog Title</h1>
             <p>Your blog description here</p>
+            <p>The song "Nature Boy" tells the story of a young man who is wise beyond his years and lives a simple, natural life. He shares a profound message that "The greatest thing you'll ever learn is just to love and be loved in return." The song captures the essence of the lessons one can learn from a life lived in harmony with nature and love. </p>            
         </header>
         
         <!-- Categories -->
@@ -24,8 +25,23 @@
 
         <!-- Blog Posts -->
         <section id="blog-posts">
-            <!-- Placeholders for blog posts, will be populated dynamically -->
+            <!-- will be sorted after all. -->
         </section>
+
+        <!-- COLUMN OF POSTS -->
+        <div class="column-of-posts">
+            {% for post in posts %}
+                <div class="post-item">
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.created_at }}</p>
+                    {% if post.image %}
+                        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                    {% else %}
+                        <p>No image available</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </body>
 </html>
